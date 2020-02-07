@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <% include ('partials/head') %>
+    <title>Bakery</title>
+</head>
+<body>	
+    <% include ('partials/navbar') %>
+    <!-- start banner Area -->
+    <section class="banner-area relative about-banner" id="home">	
+        <div class="overlay overlay-bg"></div>
+        <div class="container">				
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        Contact Us				
+                    </h1>	
+                    <p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
+                </div>	
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->				  
+
+    <!-- Start contact-page Area -->
+    <section class="contact-page-area section-gap">
+        <div class="jumbotron col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center" style="text-align: center; width: 50%;">
+            <h3>Talk to Us</h3>
+                <form role="form" action="/contact" method="post">
+                    <br style="clear:both">
+                    <div class="form-group">
+                        <input type="email"  autocomplete="off" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div> 
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right btn-submit">Send</button>
+                    </div>
+                </form>
+        </div>	
+    </section>
+    <!-- End contact-page Area -->
+    <% include ('partials/footer') %>	
+</body>
+</html>

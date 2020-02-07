@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron" style="width:400px; transform: translate(350px,50px);">
+                    <h4 class="display-6" style="text-align:center;">Register here:</h4>
+                    <% include ./partials/messages %>
+                    <form action="/signup" method="POST">
+                        <div class="form-group">
+                        <label>email:</label>
+                        <input type="email" id="email" name="email" class="form-control"  placeholder="Enter Email"/>
+                        </div>
+                        <div class="form-group">
+                        <label>password:</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password"/>
+                        </div>
+                    <button class="btn btn-primary" type="submit" style="text-align:center;">Register</button>
+                    </form>
+                Have an account?<a href="admin">log in</a>
+            </div>
+        </div>
+    </body>
+</html>

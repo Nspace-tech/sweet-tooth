@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <% include ./partials/head %>
+    <title>Bakery-Menu</title>
+</head>
+
+<body>	
+        <% include ./partials/navbar %>
+    <!-- start banner Area -->
+    <section class="banner-area relative about-banner" id="home">	
+        <div class="overlay overlay-bg"></div>
+        <div class="container">				
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        Menu List				
+                    </h1>	
+                    <p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="menu.html"> Menu</a></p>
+                </div>	
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->	
+
+    <!-- Start menu-list Area -->
+    <section class="menu-list-area section-gap">
+          <div class="row">
+              <% alldocs.forEach(function(doc) { %>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card mb-3">
+                        <img src="uploads/<%= doc.filename%>"  width="250" height="150" alt="" class="img-responsive">
+                        <b><span><%= doc.description%></span></b>
+                    </div>
+                </div>
+              <% }); %>
+              </div>
+    </section>
+    <!-- End menu-list Area -->						
+    
+    <% include ./partials/footer %>	
+</body>
+</html>
