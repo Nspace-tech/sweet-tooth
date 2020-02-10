@@ -28,7 +28,7 @@ const Contacts = require("../models/Contact");
 mongoose.set("useCreateIndex", true);
 
 const uri =
-  "mongodb+srv://bakery:grutikas@bakery-xsc1p.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://Trav:grutikas@bakery-gnzlr.gcp.mongodb.net/test?retryWrites=true&w=majority";
 const client = mongoose.createConnection(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
