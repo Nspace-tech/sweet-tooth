@@ -10,7 +10,7 @@
         <div class="container">
             <div class="jumbotron" style="width:400px; transform: translate(350px,50px);">
                     <h4 class="display-6" style="text-align:center;">Register here:</h4>
-                    <% include ./partials/messages %>
+                    <%- include ("partials/messages") %>
                     <form action="/signup" method="POST">
                         <div class="form-group">
                         <label>email:</label>
