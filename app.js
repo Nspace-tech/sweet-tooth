@@ -6,7 +6,6 @@ var bodyParser = require('body-parser');
 const passport = require("passport");
 const flash = require("connect-flash");
 const session = require("express-session");
-var sessionStore = new session.MemoryStore;
 
 require("cookie-parser");
 
