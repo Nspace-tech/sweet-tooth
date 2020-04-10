@@ -1,0 +1,8 @@
+{"message":"Bakery database connected!","level":"info"}
+{"message":"Bakery database connected!","level":"info"}
+{"message":"Bakery database connected!","level":"info"}
+{"message":"Bakery database connected!","level":"info"}
+{"message":"Bakery database connected!","level":"info"}
+{"message":"Bakery database connected!","level":"info"}
+{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"querySrv","hostname":"_mongodb._tcp.bakery-gnzlr.gcp.mongod.net","level":"info"}
+{"message":"Bakery database connected!","level":"info"}

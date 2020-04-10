@@ -6,6 +6,18 @@ var bodyParser = require('body-parser');
 const passport = require("passport");
 const flash = require("connect-flash");
 const session = require("express-session");
+const winston = require('winston');
+
+// Logger configuration
+const logConfiguration = {
+  "transports":[
+      new winston.transports.File({
+          filename:"./views/bakery.log"
+      })
+      ]
+};
+// create logger
+const logger = winston.createLogger(logConfiguration);
 
 require("cookie-parser");
 
@@ -61,6 +73,7 @@ app.get("/admin", require("./routes/index"));
 app.post("/login", require("./routes/index"));
 app.get("/index", require("./routes/index"));
 app.get("/changepassword", require("./routes/index"));
+app.post("/forgot", require("./routes/index"));
 app.get("/reset/:token", require("./routes/index"));
 app.post("/reset/:token", require("./routes/index"));
 app.get("/admenu", require("./routes/index"));
@@ -78,4 +91,4 @@ app.get("/logout", require("./routes/index"));
 
 
 
-app.listen(PORT, console.log('Server started on port 5000'));
+app.listen(PORT,logger.info('Server started on port 5000'), console.log('Server started on port 5000'));
